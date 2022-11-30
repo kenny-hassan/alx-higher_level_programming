@@ -8,12 +8,11 @@ if number >= 0:
 else:
     last = (-number % 10) * -1
 
+msg = F"Last digit of {number} is {last}"
+
 if last > 5 and last % 10 != 0:
-    print("Last digit of " + str(number) + " is " + str(last) + \
-" and is greater than 5")
+    print(F"{msg} and is greater than 5")
 elif last == 0:
-    print("Last digit of " + str(number) + " is " +\
-str(last) + " and is 0")
+    print(F"{msg} and is 0")
 else:
-    print("Last digit of " + str(number) + " is " + str(last) + \
-" and is less than 6 and not 0")
+    print(F"{msg} and is less than 6 and not 0")
